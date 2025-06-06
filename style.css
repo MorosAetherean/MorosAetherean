@@ -7,9 +7,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
+
 
 .container {
   max-width: 800px;
@@ -40,4 +44,13 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #888;
+}
+.top-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  display: block;
 }
