@@ -103,3 +103,21 @@ footer {
   white-space: pre-line; /* respects line breaks in the text */
 }
 
+
+.comparison-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scatter-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+}
+
