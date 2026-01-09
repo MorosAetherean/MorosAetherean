@@ -5,6 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Outlook - MorosAetherean</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .newsletter-container {
+      max-width: 1500px;
+      margin: 0 auto;
+      background: rgba(10, 10, 10, 0.8);
+      border: 3px solid #bfa64b;
+      border-radius: 1px;
+      padding: 10px;
+      box-shadow: 0 0 30px rgba(191, 166, 75, 0.3);
+    }
+
+    .newsletter-header {
+      text-align: center;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #bfa64b;
+    }
+
+    .newsletter-header h1 {
+      font-size: 1.5rem;
+      margin: 0 0 10px 0;
+      color: #ffd700;
+      letter-spacing: 2px;
+    }
+
+    .newsletter-header p {
+      font-size: 1rem;
+      color: #bfa64b;
+      margin: 0;
+    }
+
+    .grid-row {
+      display: grid;
+      gap: 5px;
+      margin-bottom: 3px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2-1 {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-1 {
+      grid-template-columns: 1fr;
+    }
+
+    .newsletter-box {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #bfa64b;
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 150px;
+    }
+
+    .newsletter-box.large {
+      min-height: 300px;
+    }
+
+    .newsletter-box.small {
+      min-height: 100px;
+    }
+
+    .newsletter-box.auto-height {
+      min-height: auto;
+    }
+
+    .newsletter-box h2 {
+      font-size: 1rem;
+      color: #ffd700;
+      margin: 0 0 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #bfa64b;
+      text-align: left;
+    }
+
+    .box-content {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+    
+    .box-content p {
+      text-align: left;
+      margin: 0 0 10px 0;
+    }
+    
+    .image-box {
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .box-content ul {
+      margin: 10px 0;
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .box-content li {
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    .chart-placeholder {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      border-radius: 4px;
+    }
+    
+    .newsletter-box.chart-box {
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .newsletter-box.chart-box h2 {
+      padding: 15px;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid #bfa64b;
+    }
+
+    @media (max-width: 768px) {
+      .grid-3, .grid-2, .grid-2-1 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -14,17 +160,102 @@
   </nav>
 
   <div class="container">
-    <h1>Weekly Outlook</h1>
-    
-    <p class="text-box">
-      Stay informed with our weekly market analysis and insights.
-    </p>
+    <div class="newsletter-container">
+      <div class="newsletter-header">
+        <h1>OUTLOOK</h1>
+        <p>Start of the American Empire?</p>
+      </div>
 
-    <img src="weekly-newsletter.png" alt="Weekly Newsletter" class="chart" />
+      <!-- Top Row: Major News and YTD Performance -->
+      <div class="grid-row grid-2-1">
+        <div class="newsletter-box small">
+          <h2>Major News</h2>
+          <div class="box-content">
+            <ul>
+              <li>Trump captures Venezuelan President</li>
+              <li>Trump presents ideas of banning institutional owners of single family homes.</li>
+              <li>Trump instructs purchase of $200B of mortgage bonds to reduce mortgage rates.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="newsletter-box small">
+          <h2>Performance 1/9</h2>
+          <div class="box-content">
+            <p><strong>AEG:</strong> 3.95%</p>
+            <p><strong>S&P 500:</strong> 0.92%</p>
+            <p><strong>Nasdaq Index:</strong> 1.05%</p>
+            <p><strong>Bitcoin:</strong> 6.54%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- S&P Chart Row -->
+      <div class="grid-row grid-1">
+        <div class="newsletter-box large chart-box">
+          <h2>S&P 500</h2>
+          <img src="sp500-chart.png" alt="S&P 500 Chart" class="chart-placeholder" />
+        </div>
+      </div>
+<!-- Synopsis Row: Full Width -->
+      <div class="grid-row grid-1">
+        <div class="newsletter-box small">
+          <h2>Markets</h2>
+          <div class="box-content">
+            <p>The S&P took out a very key 6900 price area that has served as reistance for the prior few months. The Nasdaq currently resides at a major reistance level as well that we will be watching intently. This is with the backdrop of the Venezuelan involvement and increased global tensions. We are excited to see how 2026 will pan out.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Chart Row -->
+      <div class="grid-row grid-1">
+        <div class="newsletter-box large chart-box">
+          <h2>Nasdaq Index</h2>
+          <img src="other-chart.png" alt="Custom Chart" class="chart-placeholder" />
+        </div>
+      </div>
+
+      
+
+      <!-- Holdings Row: 2 Columns -->
+      <div class="grid-row grid-2">
+        <div class="newsletter-box auto-height">
+          <h2>AEG Top Stocks</h2>
+          <div class="box-content">
+            <ul>
+              <li>SNDK</li>
+              <li>FTAI</li>
+              <li>AEM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="newsletter-box auto-height">
+          <h2>Market Themes</h2>
+          <div class="box-content">
+            <ul>
+              <li>AI</li>
+              <li>Precious Metals</li>
+              <li>Defense</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Notes Row: Full Width -->
+      <div class="grid-row grid-1">
+        <div class="newsletter-box">
+          <h2>Other</h2>
+          <div class="box-content">
+            <p>Stay Tuned For More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 MorosAetherean. All rights reserved.</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>&copy; 2025 MorosAetherean. All rights reserved.</p>
-  </footer>
 </body>
 </html>
