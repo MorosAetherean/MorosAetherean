@@ -1,47 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MorosAetherean</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 </head>
-<body>
-  <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="2026.html">2026</a>
-  <a href="aether-extreme.html">2025</a>
-  <a href="outlook.html">Outlook</a>
-</nav>
+<body class="home-page">
+  <div class="site-layout">
+    <aside class="side-rail">
+      <div class="rail-brand">
+        <img src="MoroSymbol.png" alt="MorosAetherean symbol"/>
+        <div>
+          <span class="rail-brand-title">MorosAetherean</span>
+          <span class="rail-brand-subtitle">Aether Extreme Growth Fund</span>
+        </div>
+      </div>
 
+      <div class="rail-group">
+        <span class="rail-label">Navigation</span>
+        <a class="rail-nav-link active" href="index.html"><span>Overview</span><span>01</span></a>
+        <a class="rail-nav-link" href="VS Major Markets.html"><span>VS Major Markets</span><span>02</span></a>
+        <a class="rail-nav-link" href="2026-interactive.html"><span>2026 Data</span><span>03</span></a>
+        <a class="rail-nav-link" href="2025-interactive.html"><span>2025 Data</span><span>04</span></a>
+      </div>
 
-  
+      <div class="rail-group">
+        <span class="rail-label">Fund snapshot</span>
+        <div class="rail-stat">
+          <strong>Current value</strong>
+          <span>$133,354</span>
+        </div>
+        <div class="rail-stat">
+          <strong>2026 YTD</strong>
+          <span class="positive">+33.35%</span>
+        </div>
+        <div class="rail-stat">
+          <strong>2025 return</strong>
+          <span class="positive">+110.07%</span>
+        </div>
+      </div>
 
+      <div class="rail-group">
+        <span class="rail-label">Positioning</span>
+        <div class="rail-note">
+          <strong>Mandate</strong>
+          <p class="note-copy">A concentrated growth strategy centered on active positioning, asymmetric upside, and disciplined capital allocation.</p>
+        </div>
+        <div class="rail-note">
+          <strong>Status</strong>
+          <p class="note-copy">2026 performance is tracked through March 27, 2026 with the current flagship strategy active.</p>
+        </div>
+      </div>
+    </aside>
 
-  <div class="container">
-    <img src="MoroSymbol.png" alt="MorosAetherean Symbol" class="top-image" />
-    <p class="morosaetherean-description text-box">
-  The first division of Chaos was not just Night and Day, but Moros and Aether; doom and divine breath. Creating the cycle of rise and fall.  
-  Those who understand the MorosAetherean are at peace: they act with clarity, knowing their path, yet without fear of its end.
-</p>
-    <p class="tagline">Aether Extreme Growth Fund</p>
-    <img src="chart.png" alt="Aether Extreme vs S&P 500" class="chart" />
-    
+    <main class="content-stage">
+      <div class="page-stack">
+        <section class="page-header-grid">
+          <article class="hero-panel panel-card">
+            <p class="eyebrow">Flagship overview</p>
+            <h1 class="hero-title">Aether Extreme Growth.</h1>
+            <p class="hero-subtitle">
+              Aether Extreme is an investment marvel built to pursue outsized returns through
+              active positioning, selective conviction, and disciplined exposure across high-upside opportunities.
+            </p>
+            <div class="hero-callout">
+              Moros and Aether <p>
 
+              </p> 
+              Clarity under volatility<p>
 
+              </p>
+              Pursuit of Asymmetry
+            </div>
+            <div class="cta-row">
+              <a class="button-primary" href="2026-interactive.html">Open 2026 dashboard</a>
+              <a class="button-secondary" href="VS Major Markets.html">Compare vs major markets</a>
+            </div>
+          </article>
 
+          <aside class="summary-card">
+            <p class="section-kicker">Executive summary</p>
+            <h2 class="summary-title">Current posture</h2>
+            <div class="summary-list">
+              <div class="summary-item">
+                <span class="mini-kicker">2026 status</span>
+                <span class="summary-value positive">+33.35%</span>
+                <p class="summary-copy">YTD performance remains the lead signal, with current value at $133,354 and a peak of $144,932.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Relative strength</span>
+                <span class="summary-value">Alpha-led</span>
+                <p class="summary-copy">The portfolio materially outperformed major benchmarks in the same period, supporting the active growth thesis.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Archive proof</span>
+                <span class="summary-value positive">+110.07%</span>
+                <p class="summary-copy">The 2025 full-year result remains visible as a credibility anchor rather than a disconnected historical note.</p>
+              </div>
+            </div>
+          </aside>
+        </section>
 
+        <section class="metric-grid metrics-wide">
+          <article class="metric-card">
+            <span class="metric-label">YTD Return</span>
+            <span class="metric-value positive">+33.35%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Current Value</span>
+            <span class="metric-value">$133,354</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Peak Value</span>
+            <span class="metric-value">$144,932</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Best Day</span>
+            <span class="metric-value positive">+8.34%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Worst Day</span>
+            <span class="metric-value negative">-6.47%</span>
+          </article>
+        </section>
 
-<section class="coming-soon">
-  <h2>Coming Soon</h2>
-  <ul>
-    <li><strong>MorosAether IPO Fund</strong></li>
-  </ul>
-</section>
+        <section class="split-grid">
+          <article class="chart-card section-card">
+            <div class="chart-header">
+              <div class="chart-copy">
+                <p class="section-kicker">Capital trajectory</p>
+                <h2 class="section-title">2026 portfolio value</h2>
+                <p class="section-copy">Portfolio value through 2026 YTD provides a direct view of capital progression, drawdown control, and current positioning strength.</p>
+              </div>
+              <div class="status-chip">Through 2026-03-27</div>
+            </div>
+            <div class="chart-wrapper chart-compact">
+              <canvas id="miniChart"></canvas>
+            </div>
+          </article>
 
-    <footer>
-      <p>&copy; 2025 MorosAetherean. All rights reserved.</p>
-    </footer>
+          <aside class="summary-card">
+            <p class="section-kicker">2025 archive</p>
+            <h2 class="summary-title">Prior-year proof</h2>
+            <div class="recap-list">
+              <div class="recap-item">
+                <span class="mini-kicker">Total return</span>
+                <span class="summary-value positive">+110.07%</span>
+              </div>
+              <div class="recap-item">
+                <span class="mini-kicker">Ending value</span>
+                <span class="summary-value">$210,071</span>
+              </div>
+              <div class="recap-item">
+                <span class="mini-kicker">Peak value</span>
+                <span class="summary-value">$246,592</span>
+              </div>
+            </div>
+            <div class="cta-row">
+              <a class="button-secondary" href="2025-interactive.html">Review 2025 dashboard</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-grid">
+          <article class="section-card">
+            <p class="section-kicker">Allocation context</p>
+            <h2 class="section-title">Benchmark view</h2>
+            <p class="section-copy">Use the market comparison page to contextualize current alpha against the S&amp;P 500, NASDAQ, gold, and bitcoin in one normalized view.</p>
+            <div class="cta-row">
+              <a class="button-secondary" href="VS Major Markets.html">Open comparison view</a>
+            </div>
+          </article>
+
+          <article class="note-card">
+            <span class="note-label">Coming soon</span>
+            <p class="note-copy">MorosAether IPO Fund remains visible as a future vehicle, but in a way that feels intentional and subordinate to the current flagship strategy.</p>
+          </article>
+        </section>
+
+        <div class="centered-footer">
+          <p class="footer-note">&copy; 2026 MorosAetherean. All rights reserved.</p>
+        </div>
+      </div>
+    </main>
   </div>
+
+<script>
+const dates = ["2026-01-02", "2026-01-05", "2026-01-06", "2026-01-07", "2026-01-08", "2026-01-09", "2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15", "2026-01-16", "2026-01-20", "2026-01-21", "2026-01-22", "2026-01-23", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-02-02", "2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-17", "2026-02-18", "2026-02-19", "2026-02-20", "2026-02-23", "2026-02-24", "2026-02-25", "2026-02-26", "2026-02-27", "2026-03-02", "2026-03-03", "2026-03-04", "2026-03-05", "2026-03-06", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27"];
+const vals  = [100000.0, 100334.9, 108699.25, 108120.82, 104576.8, 108253.81, 110709.54, 112375.5, 111914.75, 113837.16, 114998.46, 117334.85, 121502.7, 122475.43, 120802.38, 120781.65, 123033.78, 128117.91, 128087.02, 125478.51, 132662.5, 137306.41, 128988.37, 126867.1, 133278.19, 134261.27, 130513.9, 135737.03, 137499.68, 138638.7, 136045.8, 138801.18, 139506.63, 141888.14, 143446.93, 143230.79, 144931.58, 144317.92, 144036.49, 142663.79, 134695.76, 137563.22, 132290.48, 126932.5, 134250.78, 137021.55, 138292.52, 133725.38, 135512.13, 140918.12, 143091.97, 143584.6, 144881.23, 137568.34, 139395.42, 141360.98, 141100.5, 131977.55, 133354.35];
+
+new Chart(document.getElementById("miniChart"), {
+  type: "line",
+  data: {
+    labels: dates,
+    datasets: [{
+      data: vals,
+      borderColor: "#f0cd68",
+      backgroundColor: "rgba(240,205,104,0.12)",
+      fill: true,
+      borderWidth: 2.4,
+      pointRadius: 0,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        mode: "index",
+        intersect: false,
+        backgroundColor: "rgba(8,8,8,0.94)",
+        borderColor: "rgba(214,174,61,0.28)",
+        borderWidth: 1,
+        titleColor: "#f0cd68",
+        bodyColor: "#f3ece0",
+        callbacks: {
+          label: (ctx) => " $" + ctx.parsed.y.toLocaleString(undefined, { minimumFractionDigits: 2 })
+        }
+      }
+    },
+    scales: {
+      x: {
+        ticks: { color: "#8c7d61", maxTicksLimit: 6 },
+        grid: { color: "rgba(255,255,255,0.04)" }
+      },
+      y: {
+        ticks: {
+          color: "#8c7d61",
+          callback: (v) => "$" + v.toLocaleString()
+        },
+        grid: { color: "rgba(255,255,255,0.04)" }
+      }
+    }
+  }
+});
+</script>
 </body>
 </html>

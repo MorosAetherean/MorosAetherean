@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2025 Interactive Dashboard - MorosAetherean</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body class="portal-page data-page">
+  <div class="site-layout">
+    <aside class="side-rail">
+      <div class="rail-brand">
+        <img src="MoroSymbol.png" alt="MorosAetherean symbol"/>
+        <div>
+          <span class="rail-brand-title">MorosAetherean</span>
+          <span class="rail-brand-subtitle">Aether Extreme Growth Fund</span>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Navigation</span>
+        <a class="rail-nav-link" href="index.html"><span>Overview</span><span>01</span></a>
+        <a class="rail-nav-link" href="VS Major Markets.html"><span>VS Major Markets</span><span>02</span></a>
+        <a class="rail-nav-link" href="2026-interactive.html"><span>2026 Data</span><span>03</span></a>
+        <a class="rail-nav-link active" href="2025-interactive.html"><span>2025 Data</span><span>04</span></a>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Year-end metrics</span>
+        <div class="rail-stat">
+          <strong>Total return</strong>
+          <span class="positive">+110.07%</span>
+        </div>
+        <div class="rail-stat">
+          <strong>Ending value</strong>
+          <span>$210,071</span>
+        </div>
+        <div class="rail-stat">
+          <strong>Peak value</strong>
+          <span>$246,592</span>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Archive notes</span>
+        <div class="rail-note">
+          <strong>Leaders</strong>
+          <p class="note-copy">HOOD was the strongest holding at +186.8%, while MO was the weakest performer and still closed positive at +20.5%.</p>
+        </div>
+        <div class="rail-note">
+          <strong>Risk range</strong>
+          <p class="note-copy">Best day reached +16.1% and worst day was -11.23%, reflecting a meaningfully higher realized swing profile than 2026 YTD.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content-stage">
+      <div class="page-stack">
+        <section class="page-header-stack">
+          <article class="hero-panel panel-card">
+            <p class="eyebrow">Executive archive / full year</p>
+            <h1 class="page-title">2025 Interactive Dashboard</h1>
+            <p class="hero-subtitle">A full-year archive of the Aether Extreme Growth Fund, capturing capital growth, normalized winners, and position-level contribution across the 2025 performance cycle.</p>
+          </article>
+
+          <aside class="summary-card">
+            <p class="section-kicker">Executive summary</p>
+            <h2 class="summary-title">Year-end readout</h2>
+            <div class="summary-list">
+              <div class="summary-item">
+                <span class="mini-kicker">Performance</span>
+                <span class="summary-value positive">+110.07%</span>
+                <p class="summary-copy">The fund more than doubled over the year, making 2025 a defining performance record for the strategy.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Capital close</span>
+                <span class="summary-value">$210,071</span>
+                <p class="summary-copy">Ending value remains significantly above the starting base, with a peak year value of $246,592.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Context</span>
+                <span class="summary-value">High-beta year</span>
+                <p class="summary-copy">The archived year shows stronger upside and stronger downside swings, useful for evaluating the fund's volatility character.</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-label">Total Return</span>
+            <span class="metric-value positive">+110.07%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Ending Value</span>
+            <span class="metric-value">$210,071</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Peak Value</span>
+            <span class="metric-value">$246,592</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Best Day</span>
+            <span class="metric-value positive">+16.1%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Worst Day</span>
+            <span class="metric-value negative">-11.23%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Best Stock</span>
+            <span class="metric-value positive">HOOD</span>
+            <p class="metric-subtext">+186.8%</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Weakest Stock</span>
+            <span class="metric-value">MO</span>
+            <p class="metric-subtext">+20.5%</p>
+          </article>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Capital trajectory</p>
+              <h2 class="section-title">Portfolio value</h2>
+              <p class="section-copy">The full-year capital curve offers a top-down view of how aggressively the portfolio compounded through the year.</p>
+            </div>
+            <div class="badge gold">Full Year 2025</div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="portfolioChart"></canvas>
+          </div>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Relative leadership</p>
+              <h2 class="section-title">Normalized stock performance</h2>
+              <p class="section-copy">A normalized view highlights which holdings were true return engines independent of their starting capital weight.</p>
+            </div>
+          </div>
+          <div class="btn-row" id="normBtns"></div>
+          <div class="chart-wrapper">
+            <canvas id="normChart"></canvas>
+          </div>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Contribution view</p>
+              <h2 class="section-title">Position values over time</h2>
+              <p class="section-copy">Position-level value history exposes concentration shifts and contribution changes over time.</p>
+            </div>
+          </div>
+          <div class="btn-row" id="posBtns"></div>
+          <div class="chart-wrapper chart-tall">
+            <canvas id="posChart"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="2025-interactive.js"></script>
+</body>
+</html>

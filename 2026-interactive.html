@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2026 Interactive Dashboard - MorosAetherean</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body class="portal-page data-page">
+  <div class="site-layout">
+    <aside class="side-rail">
+      <div class="rail-brand">
+        <img src="MoroSymbol.png" alt="MorosAetherean symbol"/>
+        <div>
+          <span class="rail-brand-title">MorosAetherean</span>
+          <span class="rail-brand-subtitle">Aether Extreme Growth Fund</span>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Navigation</span>
+        <a class="rail-nav-link" href="index.html"><span>Overview</span><span>01</span></a>
+        <a class="rail-nav-link" href="VS Major Markets.html"><span>VS Major Markets</span><span>02</span></a>
+        <a class="rail-nav-link active" href="2026-interactive.html"><span>2026 Data</span><span>03</span></a>
+        <a class="rail-nav-link" href="2025-interactive.html"><span>2025 Data</span><span>04</span></a>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Live metrics</span>
+        <div class="rail-stat">
+          <strong>YTD return</strong>
+          <span class="positive">+33.35%</span>
+        </div>
+        <div class="rail-stat">
+          <strong>Current value</strong>
+          <span>$133,354</span>
+        </div>
+        <div class="rail-stat">
+          <strong>Peak value</strong>
+          <span>$144,932</span>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <span class="rail-label">Portfolio notes</span>
+        <div class="rail-note">
+          <strong>Leaders</strong>
+          <p class="note-copy">Best stock YTD is SNDK at +123.7%, while LLY is the weakest at -18.7% through March 27, 2026.</p>
+        </div>
+        <div class="rail-note">
+          <strong>Risk range</strong>
+          <p class="note-copy">Best day registered +8.34% and worst day -6.47%, giving a concise read on realized volatility.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content-stage">
+      <div class="page-stack">
+        <section class="page-header-stack">
+          <article class="hero-panel panel-card">
+            <p class="eyebrow">Executive dashboard / current year</p>
+            <h1 class="page-title">2026 Interactive Dashboard <span class="badge positive">YTD</span></h1>
+            <p class="hero-subtitle">Aether Extreme Growth Fund from January 2, 2026 through March 27, 2026, highlighting capital growth, leadership concentration, and position-level contribution across the current year-to-date window.</p>
+          </article>
+
+          <aside class="summary-card">
+            <p class="section-kicker">Executive summary</p>
+            <h2 class="summary-title">Current readout</h2>
+            <div class="summary-list">
+              <div class="summary-item">
+                <span class="mini-kicker">Performance</span>
+                <span class="summary-value positive">+33.35%</span>
+                <p class="summary-copy">The portfolio remains decisively positive through the current YTD window.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Capital base</span>
+                <span class="summary-value">$133,354</span>
+                <p class="summary-copy">Current portfolio value sits below the YTD high but well above the initial starting base.</p>
+              </div>
+              <div class="summary-item">
+                <span class="mini-kicker">Context</span>
+                <span class="summary-value">Growth-led</span>
+                <p class="summary-copy">The year-to-date record reflects a growth-led posture with clear leadership from the strongest underlying holdings.</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-label">YTD Return</span>
+            <span class="metric-value positive">+33.35%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Current Value</span>
+            <span class="metric-value">$133,354</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Peak Value</span>
+            <span class="metric-value">$144,932</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Best Day</span>
+            <span class="metric-value positive">+8.34%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Worst Day</span>
+            <span class="metric-value negative">-6.47%</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Best Stock YTD</span>
+            <span class="metric-value positive">SNDK</span>
+            <p class="metric-subtext">+123.7%</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Worst Stock YTD</span>
+            <span class="metric-value negative">LLY</span>
+            <p class="metric-subtext">-18.7%</p>
+          </article>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Capital trajectory</p>
+              <h2 class="section-title">Portfolio value</h2>
+              <p class="section-copy">This capital curve shows portfolio-level progress, drawdown behavior, and recovery strength across the current YTD period.</p>
+            </div>
+            <div class="status-chip">Through 2026-03-27</div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="portfolioChart"></canvas>
+          </div>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Relative leadership</p>
+              <h2 class="section-title">Normalized stock performance</h2>
+              <p class="section-copy">Normalized performance isolates relative movement from a common starting base, making leaders and laggards immediately visible.</p>
+            </div>
+          </div>
+          <div class="btn-row" id="normBtns"></div>
+          <div class="chart-wrapper">
+            <canvas id="normChart"></canvas>
+          </div>
+        </section>
+
+        <section class="chart-card section-card">
+          <div class="chart-header">
+            <div class="chart-copy">
+              <p class="section-kicker">Contribution view</p>
+              <h2 class="section-title">Position values over time</h2>
+              <p class="section-copy">Position values show which holdings carried the most capital weight and how contribution shifted across the quarter.</p>
+            </div>
+          </div>
+          <div class="btn-row" id="posBtns"></div>
+          <div class="chart-wrapper chart-tall">
+            <canvas id="posChart"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="2026-interactive.js"></script>
+</body>
+</html>
